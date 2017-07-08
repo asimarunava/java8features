@@ -7,6 +7,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import com.functional.practice.Order;
 
@@ -28,6 +29,7 @@ private static List<Integer> num = Arrays.asList(1,2,3,4);
 		IntStream.generate(() -> ThreadLocalRandom.current().nextInt(10)).limit(3).forEach(System.out::println); // 
 		// > 4, 1, 7
 		
+		Stream.iterate(10, e->e+1).filter(e->e%2==0).mapToDouble(Math::sqrt).limit(100).sum();
 		
 		
 		
@@ -36,7 +38,7 @@ private static List<Integer> num = Arrays.asList(1,2,3,4);
 			.filter(ListRevisit::check)
 			.map(Color::new);
 		
-		Supplier orderSupplier = Order::new;
+		Supplier<Order> orderSupplier = Order::new;
 		System.out.println(orderSupplier.get());
 	}
 	

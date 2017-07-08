@@ -2,10 +2,10 @@ package com.java8.Lambda.Example;
 
 import java.util.function.Consumer;
 
-public class Sample_Resource {
+public class Singleton_java8 {
 public static void main(String[] args) {
 
-		Resource.use(e->{});
+		Resource.use(e->e.op1());
 	}
 }
 
