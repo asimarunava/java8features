@@ -2,7 +2,9 @@ package com.functional.practice;
 
 import java.io.File;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -18,12 +20,19 @@ public class Joining_list {
 					   .collect(Collectors.joining("?"));
 		System.out.println(s);
 		
-		 File dir = new File("/Users/venkats/tmp/dir");
+		 File dir = new File("C:");
 		    
 		    File[] children = dir.listFiles();
 		    System.out.println(
 		    	      Stream.of(children)
 		    	            .map(File::getName)
 		    	            .collect(Collectors.joining(", ")));
+		    
+		    //Do null check before start
+/*		    return Optional.ofNullable(userList)
+	                .orElseGet(Collections::emptyList)
+	                .stream()
+	                .map(user -> user.getName())
+	                .collect(Collectors.toList());*/	  
 	}
 }
