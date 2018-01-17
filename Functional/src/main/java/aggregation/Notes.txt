@@ -1,0 +1,2 @@
+Stream.of vs Arrays.stream
+http://www.techiedelight.com/difference-stream-of-arrays-stream-java/

@@ -1,3 +1,4 @@
+/// Stream Map collect to List
 package com.functional.practice;
 
 import java.io.File;

@@ -1,3 +1,4 @@
+/// Design Singleton using Lambda
 package com.java8.Lambda.Example;
 
 import java.util.function.Consumer;

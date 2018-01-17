@@ -1,3 +1,4 @@
+/// java8 Comapring and Then Comparing
 package sorting;
 
 import java.util.*;
@@ -33,5 +34,6 @@ public class Sample {
     printSorted(people, comparing(Person::getAge));
 
     printSorted(people, comparing(Person::getAge).thenComparing(Person::getName));
+    printSorted(people, comparingInt(Person::getAge).thenComparing(Person::getName));
   }
 }
