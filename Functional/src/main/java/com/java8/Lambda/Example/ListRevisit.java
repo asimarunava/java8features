@@ -21,6 +21,8 @@ private static List<Integer> num = Arrays.asList(1,2,3,4);
 		
 		IntStream.range(1, 3).forEach(System.out::println);//1 2
 		
+		
+		
 		IntStream.rangeClosed(1, 3).forEach(System.out::println);//1 2 3
 		
 		//What if we just want every even number?

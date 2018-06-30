@@ -17,6 +17,8 @@ public class Features {
 				.andThen(getcount)
 				.apply("more");
 		
+		//hey i added this
+		
 		//getSecondWord.apply("Asim Arunava");
 		//System.out.println(getSecondWord.compose(before));
 	}
