@@ -17,10 +17,12 @@ public static void main(String[] args) {
 	
 	String bucketName= "asim-dev-test1";
 
+	//this is hard coding with secret key and access key
 	/*AWSCredentials credentials = new BasicAWSCredentials(
 	 "AKIAZD3X3PK46XMSXA6O", 
 	 "E/FPF1AJhO1QaVPXGP1YGobFYt41Iy5de3se1MQ9"
 	);
+	
 	AmazonS3 s3client = AmazonS3ClientBuilder
 	 .standard()
 	 .withCredentials(new AWSStaticCredentialsProvider(credentials))
@@ -29,7 +31,7 @@ public static void main(String[] args) {
 	
 	/*AmazonS3Client s3client = new AmazonS3Client(new AWSCredentialsProviderChain(
 	          new ProfileCredentialsProvider("default")));*/
-	
+	//ProfileCredentialsProvider("default") This fetch the credentials from ~/.aws folder
 	AmazonS3 s3client = AmazonS3ClientBuilder
 			 .standard()
 			 .withCredentials(new AWSCredentialsProviderChain(new ProfileCredentialsProvider("default")))
