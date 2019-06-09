@@ -19,8 +19,8 @@ public static void main(String[] args) {
 
 	//this is hard coding with secret key and access key
 	/*AWSCredentials credentials = new BasicAWSCredentials(
-	 "AKIAZD3X3PK46XMSXA6O", 
-	 "E/FPF1AJhO1QaVPXGP1YGobFYt41Iy5de3se1MQ9"
+	 "clientkey", 
+	 "secretkey"
 	);
 	
 	AmazonS3 s3client = AmazonS3ClientBuilder
