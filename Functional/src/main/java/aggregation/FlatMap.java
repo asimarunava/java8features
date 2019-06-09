@@ -23,7 +23,7 @@ public class FlatMap {
 						.map(j -> "[" + i + "," + j + "]"))
 				.collect(toList()));
 
-		// ["Hello", "World"] you’d like to return the list ["H", "e", "l", "o","W",
+		// ["Hello", "World"] youd like to return the list ["H", "e", "l", "o","W",
 		// "r", "d"]
 		String[] words = { "hello", "world" };
 		System.out.println(Arrays.stream(words)
